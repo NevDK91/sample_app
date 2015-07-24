@@ -28,12 +28,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development do
-  gem 'pg'
+group :development, :test do
+  gem 'sqlite3'
+  gem 'guard-rspec'
 end
 
 group :test do
-	gem 'rspec-rails', '2.13.1'
+	gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'capybara', '2.1.0'
 end
