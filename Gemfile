@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.13'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -29,12 +28,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test do
-  gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+group :development do
+  gem 'pg'
 end
 
 group :test do
+	gem 'rspec-rails', '2.13.1'
   gem 'selenium-webdriver'
   gem 'capybara', '2.1.0'
 end
