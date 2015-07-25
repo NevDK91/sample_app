@@ -1,3 +1,4 @@
+<% provide(:title, 'Главная') %>
 <div class="center hero-unit">
   <h1>Добро пожаловать в sample_app</h1>
 
@@ -5,7 +6,7 @@
     Здесь каждый пользователь может добавлять статьи на главную страницу.
   </h2>
 
-  <%= link_to "Регистрация", '#', class: "btn btn-large btn-primary" %>
+  <%= link_to "Регистрация", signup_path, class: "btn btn-large btn-primary" %>
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

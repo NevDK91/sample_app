@@ -36,9 +36,9 @@ group :development, :test do
 end
 
 group :test do
-	gem 'rspec-rails'
+	gem 'rspec-rails', '3.3.0'
   gem 'selenium-webdriver'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '2.4.4'
 end
 
 group :production do
