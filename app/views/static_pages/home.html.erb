@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails обучение Sample_App | Главная страница</title>
-  </head>
-  <body>
-    <center>
-    <p>Главная страница</p>
-    </center>
-  </body>
-</html>
+<div class="center hero-unit">
+  <h1>Добро пожаловать в sample_app</h1>
+
+  <h2>
+    Здесь каждый пользователь может добавлять статьи на главную страницу.
+  </h2>
+
+  <%= link_to "Регистрация", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
